@@ -48,7 +48,7 @@ public class Service {
         serviceConfigs.currentConfigs();
 
         // Create a connection to the database
-        //connectToDatabase();
+        // connectToDatabase();
 
         // Initialize HTTP sever
         initHTTPServer();
@@ -168,7 +168,7 @@ public class Service {
             URI uri = UriBuilder.fromUri(scheme + hostName + path).port(port).build();
             ServiceLogger.LOGGER.config("Final URI: " + uri.toString());
 
-            ResourceConfig rc = new ResourceConfig().packages(RESOURCE_PATH);
+            ResourceConfig rc = new ResourceConfig().packages("edu.uci.ics.cs122b.service.frame.resources");
             ServiceLogger.LOGGER.config("Set Jersey resources.");
             rc.register(JacksonFeature.class);
             ServiceLogger.LOGGER.config("Set Jackson as serializer.");
@@ -191,6 +191,10 @@ public class Service {
         System.err.println("\t\t--default");
         System.err.println("\t\t-d");
         System.exit(-1);
+    }
+
+    public static Connection getCon() {
+        return con;
     }
 
 }

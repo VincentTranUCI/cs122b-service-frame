@@ -1,0 +1,32 @@
+[2019/07/26 20:25:33][CONFIG][initService]  Starting service...
+[2019/07/26 20:25:33][CONFIG][currentConfigs]  Scheme: http://
+[2019/07/26 20:25:33][CONFIG][currentConfigs]  Hostname: 0.0.0.0
+[2019/07/26 20:25:33][CONFIG][currentConfigs]  Port: 2942
+[2019/07/26 20:25:33][CONFIG][currentConfigs]  Path: /frame
+[2019/07/26 20:25:33][CONFIG][currentConfigs]  Logger output directory: ./logs/
+[2019/07/26 20:25:33][CONFIG][currentConfigs]  Database hostname: hostname
+[2019/07/26 20:25:33][CONFIG][currentConfigs]  Database port: 3306
+[2019/07/26 20:25:33][CONFIG][currentConfigs]  Database username: username
+[2019/07/26 20:25:33][CONFIG][currentConfigs]  Database password provided? true
+[2019/07/26 20:25:33][CONFIG][currentConfigs]  Database name: name
+[2019/07/26 20:25:33][CONFIG][currentConfigs]  Database driver: com.mysql.cj.jdbc.Driver
+[2019/07/26 20:25:33][CONFIG][currentConfigs]  Database connection settings: ?autoReconnect=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=PST
+[2019/07/26 20:25:33][CONFIG][initHTTPServer]  Initializing HTTP server...
+[2019/07/26 20:25:33][CONFIG][initHTTPServer]  Building URI from configs...
+[2019/07/26 20:25:33][CONFIG][initHTTPServer]  Final URI: http://0.0.0.0:2942/frame
+[2019/07/26 20:25:33][CONFIG][initHTTPServer]  Set Jersey resources.
+[2019/07/26 20:25:33][CONFIG][initHTTPServer]  Set Jackson as serializer.
+[2019/07/26 20:25:33][CONFIG][initHTTPServer]  Starting HTTP server...
+[2019/07/26 20:25:34][CONFIG][initHTTPServer]  HTTP server started.
+[2019/07/26 20:25:34][CONFIG][initService]  Service initialized.
+[2019/07/26 20:25:37][INFO][workflowGet]  Received request to test a get example.
+[2019/07/26 20:25:37][INFO][respond]  Example Response.
+[2019/07/26 20:25:37][INFO][generateResponseBuilder]  Example Response.
+[2019/07/26 20:25:41][INFO][workflowPost]  Received request to test a post example.
+[2019/07/26 20:25:41][INFO][workflowPost]  Request:
+{
+    "x": 2,
+    "y": 3
+}
+[2019/07/26 20:25:41][INFO][respond]  Example Response.
+[2019/07/26 20:25:41][INFO][generateResponseBuilder]  Example Response.

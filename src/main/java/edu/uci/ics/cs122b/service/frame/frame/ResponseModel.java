@@ -39,7 +39,6 @@ public class ResponseModel {
 
     // Takes headers from a request and builds a response
     public Response respond(HttpHeaders headers) {
-        ServiceLogger.LOGGER.info(message);
         Response.ResponseBuilder responseBuilder = generateResponseBuilder(this);
         if(headers == null)
             return responseBuilder.entity(this).build();
